@@ -2,5 +2,6 @@
 title: "About"
 ---
 
-# This is a header
-Yup, go and get 'er done.
+# About this site
+
+This is some information about this site
