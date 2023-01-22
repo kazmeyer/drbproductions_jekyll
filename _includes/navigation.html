@@ -1,5 +1,38 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link | absolute_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-</nav>
+<div class="loader-wrapper">
+  <div class="loader">
+  </div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<div class="container-fluid bg-dark sticky-top">
+  <div class="container">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  my-0  my-md-3" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><svg class="svg-white svg-logo bi me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.17 21.32"><path d="M38.62 6.73c-1.7-1.66-3.74-2.48-6.11-2.48h-5.06v-.66c0-.98-.35-1.82-1.06-2.53S24.85 0 23.86 0v4.25h-1.5c-2.36 0-4.39.83-6.09 2.48-.28.28-.54.56-.77.85-.23-.29-.48-.56-.75-.83-1.71-1.67-3.74-2.51-6.1-2.51s-4.39.84-6.09 2.51C.86 8.42.01 10.44.01 12.8v8.51h8.64c1.91 0 3.6-.54 5.08-1.61.36-.26.7-.55 1.03-.87 1.7-1.66 2.55-3.67 2.55-6.03v-.04c0-1.41.49-2.62 1.47-3.62s2.17-1.51 3.58-1.51h1.5v5.12c0 2.36.85 4.38 2.55 6.05 1.7 1.67 3.73 2.51 6.09 2.51s4.4-.83 6.1-2.51 2.56-3.69 2.56-6.05-.85-4.37-2.55-6.03Zm-26.41 9.69c-.98 1-2.17 1.51-3.57 1.51H3.61v-5.12c0-1.41.49-2.62 1.46-3.64s2.16-1.53 3.57-1.53 2.6.51 3.57 1.53c.98 1.02 1.46 2.23 1.46 3.64 0 1.41-.49 2.61-1.46 3.61Zm23.86-.02c-.98 1.02-2.17 1.53-3.58 1.53s-2.6-.51-3.58-1.53-1.47-2.23-1.47-3.64V7.64h5.05c1.41 0 2.6.5 3.58 1.5s1.47 2.21 1.47 3.62c0 1.41-.49 2.62-1.47 3.64Z"/></svg>
+          <h1 style="text-indent: -9999px; position: absolute;">DRB Productions</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">menu
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <svg class="svg-white svg-logo bi me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.17 21.32"><path d="M38.62 6.73c-1.7-1.66-3.74-2.48-6.11-2.48h-5.06v-.66c0-.98-.35-1.82-1.06-2.53S24.85 0 23.86 0v4.25h-1.5c-2.36 0-4.39.83-6.09 2.48-.28.28-.54.56-.77.85-.23-.29-.48-.56-.75-.83-1.71-1.67-3.74-2.51-6.1-2.51s-4.39.84-6.09 2.51C.86 8.42.01 10.44.01 12.8v8.51h8.64c1.91 0 3.6-.54 5.08-1.61.36-.26.7-.55 1.03-.87 1.7-1.66 2.55-3.67 2.55-6.03v-.04c0-1.41.49-2.62 1.47-3.62s2.17-1.51 3.58-1.51h1.5v5.12c0 2.36.85 4.38 2.55 6.05 1.7 1.67 3.73 2.51 6.09 2.51s4.4-.83 6.1-2.51 2.56-3.69 2.56-6.05-.85-4.37-2.55-6.03Zm-26.41 9.69c-.98 1-2.17 1.51-3.57 1.51H3.61v-5.12c0-1.41.49-2.62 1.46-3.64s2.16-1.53 3.57-1.53 2.6.51 3.57 1.53c.98 1.02 1.46 2.23 1.46 3.64 0 1.41-.49 2.61-1.46 3.61Zm23.86-.02c-.98 1.02-2.17 1.53-3.58 1.53s-2.6-.51-3.58-1.53-1.47-2.23-1.47-3.64V7.64h5.05c1.41 0 2.6.5 3.58 1.5s1.47 2.21 1.47 3.62c0 1.41-.49 2.62-1.47 3.64Z"/></svg>
+          <h1 class="offcanvas-title" id="offcanvasNavbar2Label" style="text-indent: -9999px; position: absolute;">DRB Productions</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              {% for item in site.data.navigation %}
+              <li class="nav-item">
+                <a href="{{ item.link | absolute_url }}" class="nav-link {% if page.url == item.link %}active{% endif %}" {% if page.url == item.link %}aria-current="page"{% endif %}  >{{ item.name }}</a> 
+              </li>
+              {% endfor %}
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>   
+    </div>
+  </div>
+</div>

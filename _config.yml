@@ -25,3 +25,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+exclude:
+  - node-modules
+  - source
+  - config.codekit3
+  - package-lock.json
+  - package.json

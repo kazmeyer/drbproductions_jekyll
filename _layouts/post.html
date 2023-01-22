@@ -1,12 +1,23 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date: "%A, %B %d, %Y" }}
-	{% assign author = site.authors | where: 'short_name', page.author | first %}
-	{% if author %}
-	- <a href="{{ author.url | absolute_url }}">{{ author.name }}</a>
-	{% endif %}
-</p>
-
-{{ content }}
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.date | date: "%A, %B %d, %Y" }}
+			{% assign author = site.authors | where: 'short_name', page.author | first %}
+			{% if author %}
+			- <a href="{{ author.url | absolute_url }}">{{ author.name }}</a>
+			{% endif %}
+		</p>
+		    <p>
+      Tagged 
+      {% for tag in page.tags %}
+      <a class="post" href="/tag/{{tag}}">#{{tag}}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+		{{ content }}		
+	</div>
+</div>
+</div>

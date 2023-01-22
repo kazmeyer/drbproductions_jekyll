@@ -1,9 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fuck me sideways</title>
-    <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="What the fuck is this the site title?" />
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Fuck me sideways | What the fuck is this the site title?</title>
@@ -23,33 +28,365 @@
 <!-- End Jekyll SEO tag -->
 
   </head>
-  <body>
-    <nav>
-  
-    <a href="http://localhost:4000/" class="current">Home</a>
-  
-    <a href="http://localhost:4000/about.html" >About</a>
-  
-    <a href="http://localhost:4000/blog.html" >Blog</a>
-  
-    <a href="http://localhost:4000/staff.html" >Staff</a>
-  
-</nav>
-    <h1>Fuck me sideways / 6</h1>
-<h1>hello world!</h1>
-<p>I rock! </p>
-<p>why no live reload?</p>
-<h1>Liquid</h1>
-<p>Object <a href="https://jekyllrb.com/docs/variables/">Variables</a>, <a href="https://jekyllrb.com/docs/liquid/tags/">Tags</a>, and <a href="https://jekyllrb.com/docs/liquid/filters/">Filters</a></p>
+  <body class="body-home">
+    <div class="loader-wrapper">
+  <div class="loader">
+  </div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<div class="container-fluid bg-dark sticky-top">
+  <div class="container">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  my-0  my-md-3" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><svg class="svg-white svg-logo bi me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.17 21.32"><path d="M38.62 6.73c-1.7-1.66-3.74-2.48-6.11-2.48h-5.06v-.66c0-.98-.35-1.82-1.06-2.53S24.85 0 23.86 0v4.25h-1.5c-2.36 0-4.39.83-6.09 2.48-.28.28-.54.56-.77.85-.23-.29-.48-.56-.75-.83-1.71-1.67-3.74-2.51-6.1-2.51s-4.39.84-6.09 2.51C.86 8.42.01 10.44.01 12.8v8.51h8.64c1.91 0 3.6-.54 5.08-1.61.36-.26.7-.55 1.03-.87 1.7-1.66 2.55-3.67 2.55-6.03v-.04c0-1.41.49-2.62 1.47-3.62s2.17-1.51 3.58-1.51h1.5v5.12c0 2.36.85 4.38 2.55 6.05 1.7 1.67 3.73 2.51 6.09 2.51s4.4-.83 6.1-2.51 2.56-3.69 2.56-6.05-.85-4.37-2.55-6.03Zm-26.41 9.69c-.98 1-2.17 1.51-3.57 1.51H3.61v-5.12c0-1.41.49-2.62 1.46-3.64s2.16-1.53 3.57-1.53 2.6.51 3.57 1.53c.98 1.02 1.46 2.23 1.46 3.64 0 1.41-.49 2.61-1.46 3.61Zm23.86-.02c-.98 1.02-2.17 1.53-3.58 1.53s-2.6-.51-3.58-1.53-1.47-2.23-1.47-3.64V7.64h5.05c1.41 0 2.6.5 3.58 1.5s1.47 2.21 1.47 3.62c0 1.41-.49 2.62-1.47 3.64Z"/></svg>
+          <h1 style="text-indent: -9999px; position: absolute;">DRB Productions</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">menu
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <svg class="svg-white svg-logo bi me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.17 21.32"><path d="M38.62 6.73c-1.7-1.66-3.74-2.48-6.11-2.48h-5.06v-.66c0-.98-.35-1.82-1.06-2.53S24.85 0 23.86 0v4.25h-1.5c-2.36 0-4.39.83-6.09 2.48-.28.28-.54.56-.77.85-.23-.29-.48-.56-.75-.83-1.71-1.67-3.74-2.51-6.1-2.51s-4.39.84-6.09 2.51C.86 8.42.01 10.44.01 12.8v8.51h8.64c1.91 0 3.6-.54 5.08-1.61.36-.26.7-.55 1.03-.87 1.7-1.66 2.55-3.67 2.55-6.03v-.04c0-1.41.49-2.62 1.47-3.62s2.17-1.51 3.58-1.51h1.5v5.12c0 2.36.85 4.38 2.55 6.05 1.7 1.67 3.73 2.51 6.09 2.51s4.4-.83 6.1-2.51 2.56-3.69 2.56-6.05-.85-4.37-2.55-6.03Zm-26.41 9.69c-.98 1-2.17 1.51-3.57 1.51H3.61v-5.12c0-1.41.49-2.62 1.46-3.64s2.16-1.53 3.57-1.53 2.6.51 3.57 1.53c.98 1.02 1.46 2.23 1.46 3.64 0 1.41-.49 2.61-1.46 3.61Zm23.86-.02c-.98 1.02-2.17 1.53-3.58 1.53s-2.6-.51-3.58-1.53-1.47-2.23-1.47-3.64V7.64h5.05c1.41 0 2.6.5 3.58 1.5s1.47 2.21 1.47 3.62c0 1.41-.49 2.62-1.47 3.64Z"/></svg>
+          <h1 class="offcanvas-title" id="offcanvasNavbar2Label" style="text-indent: -9999px; position: absolute;">DRB Productions</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              
+              <li class="nav-item">
+                <a href="http://localhost:4000/" class="nav-link active" aria-current="page"  >Home</a> 
+              </li>
+              
+              <li class="nav-item">
+                <a href="http://localhost:4000/about.html" class="nav-link "   >About</a> 
+              </li>
+              
+              <li class="nav-item">
+                <a href="http://localhost:4000/blog.html" class="nav-link "   >Blog</a> 
+              </li>
+              
+              <li class="nav-item">
+                <a href="http://localhost:4000/staff.html" class="nav-link "   >Staff</a> 
+              </li>
+              
+            </ul>
 
-    <hr>
-{"name"=>"Home", "link"=>"/"}{"name"=>"About", "link"=>"/about.html"}{"name"=>"Blog", "link"=>"/blog.html"}{"name"=>"Staff", "link"=>"/staff.html"}
-<h2>Objects on this page</h2>
-<h3>Site</h3>
-Jekyll::Drops::SiteDrop
-<h3>Page</h3>
-{"layout"=>"default", "title"=>"Fuck me sideways", "my_number"=>5, "excerpt"=>"this is the thing.", "content"=>"{{ page.title }} / {{ page.my_number | plus: 1}}\n{{ \"Hello World!\" | downcase }}\nI rock! \nwhy no live reload?\nLiquid\nObject Variables, Tags, and Filters\n", "dir"=>"/", "name"=>"index.html", "path"=>"index.html", "url"=>"/"}
-<hr>
-    <script src="http://localhost:4000/assets/js/main.js"></script>.
+          </div>
+        </div>
+      </div>
+    </nav>   
+    </div>
+  </div>
+</div>
+    <main>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">figure out how to do this 'dynamically' using data?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="container-fluid p-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <h1>Hello modal</h1>
+                <img class="modal-image img-fluid" alt="pic of a bridge">
+                <div class="modal-bio"></div>              
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="container-fluid hero-image">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-md-8 offset-md-2 align-self-center text-center text-white">
+          <div class="card my-3 my-md-5 p-3 p-md-5 shadow-lg" style="color: black; background-color: rgba(255, 255, 255, 0.8);">
+            <h1 class="display-1 sm-line">hello world</h1>
+            <p class="lead mb-4">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Et labore neque maiores quas facere at explicabo nemo ullam. Quae nesciunt voluptatem hic maiores necessitatibus, laudantium sit asperiores magnam inventore aut!</p> 
+            <div class="row mb-4">
+              <div class="col-lg-8 offset-lg-2"><!-- https://mdbootstrap.com/docs/standard/utilities/embeds/ -->
+                <div class="ratio ratio-16x9">
+                  <!--<iframe
+                    src="https://www.youtube.com/embed/mpdZZhRBnOg"
+                    title="YouTube video"
+                    allowfullscreen
+                  ></iframe>-->
+                </div>                
+              </div>
+            </div>
+            <p><a href="#" class="btn btn-primary"><svg class="svg-white svg-social-icon-hero" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg> Watch all videos</a></p>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card py-3 my-3 p-md-3 my-md-5 rounded shadow-lg">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 home-pull-bg"></div>
+                <div class="col-md-6 p-5">
+                  <h2>This is a headline</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Explicabo rerum consequuntur possimus nemo eaque impedit quis ipsum ipsam minus, animi libero eum magni suscipit. Totam assumenda repudiandae eveniet eos illo!</p>
+                  <p class="mb-0">Culpa ad, reiciendis aperiam sapiente mollitia tenetur unde rerum, quasi. Praesentium quae sunt accusantium aspernatur, culpa illo? Vero voluptatibus pariatur accusantium dolor!</p>
+                </div>            
+              </div>              
+            </div>
+
+          </div>          
+        </div>
+      </div>
+    </div>    
+  </div>
+  <div class="container-fluid home-fixed-1 py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 my-4">
+          <div class="card w-100 shadow-lg h-100">
+            <picture>
+              <source srcset="http://localhost:4000/assets/images/figure-picture-test-2.webp" type="image/webp">
+              <source srcset="http://localhost:4000/assets/images/figure-picture-test-2.png" type="image/png"> 
+              <img src="http://localhost:4000/assets/images/figure-picture-test-2.png" alt="Irish Bridge" class="card-img-top img-fluid" width="1920" height="1080">
+            </picture>
+            <div class="card-body">
+              <h2 class="card-title h5">Card title</h2>
+              <h3 class="card-subtitle mb-2 text-muted h6">Card subtitle</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+             <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 my-4">
+          <div class="card w-100 shadow-lg h-100">
+            <picture>
+              <source srcset="http://localhost:4000/assets/images/figure-picture-test.webp" type="image/webp">
+              <source srcset="http://localhost:4000/assets/images/figure-picture-test.png" type="image/png"> 
+              <img src="http://localhost:4000/assets/images/figure-picture-test.png" alt="Irish Bridge" class="card-img-top img-fluid" width="1920" height="1080">
+            </picture>
+            <div class="card-body">
+              <h2 class="card-title text-center">Card title</h2>
+              <h3 class="card-subtitle mb-2 text-muted h6 text-center">Card subtitle</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+             <div class="card-footer text-center">
+              <a href="#exampleModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-whatever="@mdo" data-bs-bio="<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Vero, eligendi! Sint qui, consequatur quibusdam, animi, possimus saepe cupiditate ipsum deleniti voluptas labore officiis? Ipsum voluptatum dolores cum facere labore neque.</p>
+        <p>Quaerat corrupti excepturi reiciendis, amet inventore exercitationem? Unde, commodi, itaque? Odio recusandae quo, similique adipisci consequuntur ea esse voluptates dolor architecto dicta reiciendis reprehenderit repellat facere nemo sequi ratione harum.</p>
+        <p>Adipisci sed error praesentium modi corrupti nulla, illum recusandae inventore. Nihil velit repellat aliquid, delectus rem voluptate hic dignissimos aliquam, assumenda fuga, vero quisquam dicta mollitia. Soluta, vero, quibusdam? Harum.</p>
+        <p>Velit similique cupiditate nemo explicabo cumque impedit, enim corporis asperiores quo obcaecati quis nisi suscipit dolorem exercitationem, et recusandae veniam aut accusantium vel dicta aliquam dolore adipisci! Officia, ex voluptatem.</p>
+        <p>Aut id dignissimos ipsam neque quibusdam ullam, natus ad modi minima voluptas dolorum saepe, mollitia blanditiis soluta aliquam nostrum facilis, officiis necessitatibus consequuntur molestias. Modi temporibus sed tempora ex delectus.</p>
+        <p>Earum labore quo quidem molestiae maxime obcaecati aperiam possimus nam, sapiente tempora, eos, atque ipsa dolorem rem. Sit, ipsam. Aut doloribus, qui neque. Non blanditiis, numquam laboriosam. Aliquam, ab error.</p>
+        <p>Eius velit unde, blanditiis distinctio rerum, delectus aliquam odio fugit quam possimus cum incidunt id, nostrum optio sequi iure nemo reprehenderit aut illum esse beatae temporibus. Eos fugiat omnis doloribus.</p>
+        <p>Similique nostrum nobis optio! Neque nostrum dolorem, assumenda debitis ad error molestias. Libero maxime aliquid eos veritatis amet aspernatur aliquam, quaerat sed consectetur enim eaque id in consequatur incidunt rem!</p>
+        <p>Porro obcaecati enim, et soluta beatae reprehenderit nobis neque sequi sint officiis, amet numquam, fugit iusto dignissimos ratione. Deleniti, sapiente, nihil. In, expedita? Iusto qui totam voluptates cum exercitationem soluta.</p>" data-bs-image="http://localhost:4000/assets/images/figure-picture-test.png">MORE INFO</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 my-4">
+          <div class="card w-100 shadow-lg h-100">
+            <picture>
+              <source srcset="http://localhost:4000/assets/images/figure-picture-test.webp" type="image/webp">
+              <source srcset="http://localhost:4000/assets/images/figure-picture-test.png" type="image/png"> 
+              <img src="http://localhost:4000/assets/images/figure-picture-test.png" alt="Irish Bridge" class="card-img-top img-fluid" width="1920" height="1080">
+            </picture>
+            <div class="card-body">
+              <h2 class="card-title h5">Card title</h2>
+              <h3 class="card-subtitle mb-2 text-muted h6">Card subtitle</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid py-5 bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 class="h1 text-center mb-4">Process</h2>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <svg class="img-fluid w-100" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><g stroke="#37424a" stroke-linejoin="round" stroke-width="20"><path d="m1456 435.5c0-102.45-83.05-185.5-185.5-185.5s-210.5 69-173.5 191l-50.2 94.03c-1.42 5.56 2.78 10.97 8.51 10.97l29.68-1 25.7 115.1c5.18 25.2 32.94 38.53 55.85 26.81l147.46-70.92-.14-.11c81.53-19.53 142.14-92.88 142.14-180.39z" fill="#7fdaf3"/><path d="m1120 438.38 38 13.62-25 7" fill="none" stroke-linecap="round"/><path d="m457.38 668.19c0-102.45 83.05-185.5 185.5-185.5s210.5 69 173.5 191l50.2 94.03c1.42 5.56-2.78 10.97-8.51 10.97l-29.68-1-25.7 115.1c-5.18 25.2-32.94 38.53-55.85 26.81l-147.46-70.92.14-.11c-81.53-19.53-142.14-92.88-142.14-180.39z" fill="#ffa48f"/><path d="m793.38 671.08-38 13.61 25 7" fill="none" stroke-linecap="round"/><path d="m1046.53 306.29h-379.6c-24.85 0-45 20.15-45 45v74.69" fill="none" stroke-linecap="round"/></g><path d="m588.02 386.14 33.9 33.93 33.91-33.93v28.79l-33.91 33.91-33.9-33.91z" fill="#37424a"/><path d="m866.38 845.57h379.6c24.85 0 45-20.15 45-45v-74.69" fill="none" stroke="#37424a" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/><path d="m1324.89 765.72-33.91-33.93-33.9 33.93v-28.79l33.9-33.91 33.91 33.91z" fill="#37424a"/><path d="m1900 20v1040h-1880v-1040zm20-20h-1920v1080h1920z" fill="#37424a"/></svg>
+              </div>
+              <div class="swiper-slide">
+                <svg class="img-fluid w-100" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><g stroke="#37424a" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"><path d="m1131.42 163.62 102.08 102.09" fill="#fff"/><path d="m1131.42 163.62h-444.92v761h547v-658.91h-104.52z" fill="#fff"/><path d="m808.54 334.46h302.92" fill="none"/><path d="m808.54 394.37h302.92" fill="none"/><path d="m808.54 454.27h302.92" fill="none"/><path d="m808.54 514.17h302.92" fill="none"/><path d="m808.54 574.07h302.92" fill="none"/><path d="m808.54 693.88h302.92" fill="none"/><path d="m808.54 633.98h302.92" fill="none"/><path d="m808.54 753.78h302.92" fill="none"/><path d="m1079.53 740.43-149.4-149.4c54.62-72.85 48.81-176.66-17.44-242.92-72.64-72.64-190.41-72.64-263.04 0-72.64 72.64-72.64 190.41 0 263.04 65.31 65.31 167.09 71.88 239.76 19.76l149.82 149.82c8.31 8.31 21.78 8.31 30.09 0l10.21-10.21c8.31-8.31 8.31-21.78 0-30.09z" fill="#fd907d"/><circle cx="781.17" cy="479.64" fill="#6ed2f0" r="149"/><path d="m699.27 419.74h163.8" fill="none"/><path d="m682.77 479.64h196.8" fill="none"/><path d="m699.27 539.55h163.8" fill="none"/></g><path d="m1900 20v1040h-1880v-1040zm20-20h-1920v1080h1920z" fill="#37424a"/></svg>
+              </div>
+              <div class="swiper-slide">
+                <svg class="img-fluid w-100" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><g stroke="#37424a" stroke-linejoin="round" stroke-width="20"><path d="m1198.72 484.65c0-129.24-102.59-234.52-230.77-238.86-137.38-4.65-251.04 108.38-247.13 245.78 2.74 96.21 62.34 178.17 146.37 213.49 11.19 4.7 18.53 15.58 18.53 27.72v41.86s0 .02.02.02h147.96s.02 0 .02-.02v-41.86c0-12.12 7.32-23 18.49-27.7 86.06-36.15 146.51-121.22 146.51-220.42z" fill="#fff" stroke-linecap="round"/><path d="m886.23 793.65h147v31h-147z" fill="#7fdaf3"/><path d="m923.23 910.65h73c0 17.11-13.89 31-31 31h-11c-17.11 0-31-13.89-31-31z" fill="#7fdaf3"/><path d="m886.23 831.81h147v31h-147z" fill="#7fdaf3"/><path d="m886.23 869.98h147v31h-147z" fill="#7fdaf3"/><path d="m960 98.35v107.97" fill="#fff" stroke-linecap="round"/><path d="m1238 484.32h107.97" fill="#fff" stroke-linecap="round"/><path d="m574.03 484.32h107.97" fill="#fff" stroke-linecap="round"/><path d="m1156.58 680.9 76.34 76.35" fill="#fff" stroke-linecap="round"/><path d="m687.08 211.4 76.34 76.35" fill="#fff" stroke-linecap="round"/><path d="m1156.58 287.75 76.34-76.35" fill="#fff" stroke-linecap="round"/><path d="m687.08 757.25 76.34-76.35" fill="#fff" stroke-linecap="round"/></g><path d="m717.49 10h108.83l-22.24 50.12z" fill="#fff"/><path d="m810.94 20-11.49 25.89-44.72-25.89zm30.76-20h-161.45l128.44 74.35z" fill="#37424a"/><path d="m1093.68 10h108.83l-86.59 50.12z" fill="#fff"/><path d="m1165.27 20-44.72 25.89-11.49-25.89zm74.47-20h-161.45l33 74.35z" fill="#37424a"/><path d="m10 1070v-1060h491.9l49.89 233.42-359.85 37.41c-3.93.41-7.25 3.1-8.48 6.86-1.22 3.76-.11 7.89 2.83 10.53l269.13 241.78-269.13 241.78c-2.94 2.64-4.05 6.77-2.83 10.53s4.54 6.45 8.48 6.86l359.85 37.41-49.89 233.42z" fill="#fd907d"/><path d="m493.81 20 45.87 214.62-348.78 36.26c-7.86.82-14.51 6.19-16.95 13.71s-.23 15.77 5.66 21.06l260.85 234.34-260.85 234.34c-5.88 5.28-8.1 13.54-5.66 21.06s9.09 12.89 16.95 13.71l348.78 36.26-45.87 214.62h-473.81v-1039.98zm16.18-20h-509.99v1080h509.99l53.9-252.21-370.92-38.57 277.41-249.22-277.41-249.22 370.92-38.57z" fill="#37424a"/><path d="m1418.1 1070-49.89-233.42 359.85-37.41c3.93-.41 7.25-3.1 8.48-6.86 1.22-3.76.11-7.89-2.83-10.53l-269.13-241.78 269.13-241.78c2.94-2.64 4.05-6.77 2.83-10.53s-4.54-6.45-8.48-6.86l-359.85-37.41 49.89-233.42h491.9v1060z" fill="#fd907d"/><path d="m1900 20v1040h-473.81l-45.87-214.62 348.78-36.26c7.86-.82 14.51-6.19 16.95-13.71s.23-15.77-5.66-21.06l-260.85-234.34 260.85-234.34c5.88-5.28 8.1-13.54 5.66-21.06s-9.09-12.89-16.95-13.71l-348.78-36.26 45.87-214.62h473.81m20-20h-509.99l-53.9 252.21 370.92 38.57-277.41 249.22 277.41 249.22-370.92 38.57 53.9 252.21h509.99v-1080.02z" fill="#37424a"/><path d="m717.49 1070 86.59-50.12 22.24 50.12z" fill="#fff"/><path d="m799.45 1034.11 11.49 25.89h-56.21zm9.25-28.46-128.45 74.35h161.45z" fill="#37424a"/><path d="m1093.68 1070 22.24-50.12 86.59 50.12z" fill="#fff"/><path d="m1120.55 1034.11 44.72 25.89h-56.21zm-9.25-28.46-33 74.35h161.45l-128.44-74.35z" fill="#37424a"/></svg>
+              </div>
+              <div class="swiper-slide">
+                <svg class="img-fluid w-100" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><g stroke="#37424a" stroke-linejoin="round" stroke-width="20"><path d="m1167.61 265.97 102.09 102.09" fill="#fff" stroke-linecap="round"/><path d="m1167.61 265.97h-444.91v761h547v-658.91h-104.52z" fill="#fff" stroke-linecap="round"/><path d="m1068.61 221.97 102.09 102.09" fill="#fff" stroke-linecap="round"/><path d="m1068.61 221.97h-444.91v761h547v-658.91h-104.52z" fill="#fff" stroke-linecap="round"/><path d="m1131.42 159.5 102.08 102.09" fill="#fff" stroke-linecap="round"/><path d="m1131.42 159.5h-444.92v761h547v-658.91h-104.52z" fill="#fff" stroke-linecap="round"/><path d="m808.54 689.76h302.92" fill="none" stroke-linecap="round"/><path d="m808.54 629.85h302.92" fill="none" stroke-linecap="round"/><path d="m808.54 749.66h302.92" fill="none" stroke-linecap="round"/><path d="m809 277h302v302h-302z" fill="none" stroke-linecap="round"/><path d="m809 803h129v56h-129z" fill="none" stroke-linecap="round"/><path d="m982 803h129v56h-129z" fill="none" stroke-linecap="round"/><path d="m433.82 123.77h107v648h-107z" fill="#7fdaf3" transform="matrix(.70710678 -.70710678 .70710678 .70710678 -173.89 475.73)"/><path d="m840.38 800.84-161.79-86.13 75.66-75.66z" fill="#ffa48f"/><path d="m192.34 188.8h107v35h-107z" fill="#fff" stroke-linecap="round" transform="matrix(.70710678 -.70710678 .70710678 .70710678 -73.87 234.26)"/><path d="m182.5 106.01c29.56 0 53.55 24 53.55 53.55v20.45h-107v-20.55c0-29.5 23.95-53.45 53.45-53.45z" fill="#ffa48f" transform="matrix(.70710678 -.70710678 .70710678 .70710678 -47.66 170.97)"/><path d="m167.59 164.05h107v35h-107z" fill="#fff" stroke-linecap="round" transform="matrix(.70710678 -.70710678 .70710678 .70710678 -63.62 209.51)"/></g><path d="m840.38 800.84-36.54-68.64-32.1 32.1z" fill="#37424a"/><path d="m297.6 286 386.46 386.46" fill="#ffa48f" stroke="#37424a" stroke-linejoin="round" stroke-width="20"/><path d="m287.83 277-20.42-20.41" fill="#ffa48f" stroke="#37424a" stroke-linejoin="round" stroke-width="20"/><path d="m1900 20v1040h-1880v-1040zm20-20h-1920v1080h1920z" fill="#37424a"/></svg>
+              </div>
+              <div class="swiper-slide">
+                <svg class="img-fluid w-100" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><g stroke="#37424a" stroke-linejoin="round" stroke-width="20"><path d="m1131.42 159.5 102.08 102.09" fill="#fff" stroke-linecap="round"/><path d="m1131.42 159.5h-444.92v761h547v-658.91h-104.52z" fill="#fff" stroke-linecap="round"/><path d="m808.54 689.76h302.92" fill="none" stroke-linecap="round"/><path d="m808.54 629.85h302.92" fill="none" stroke-linecap="round"/><path d="m808.54 749.66h302.92" fill="none" stroke-linecap="round"/><path d="m809 277h302v302h-302z" fill="none" stroke-linecap="round"/><path d="m809 803h129v56h-129z" fill="none" stroke-linecap="round"/><path d="m982 803h129v56h-129z" fill="none" stroke-linecap="round"/><circle cx="1165.5" cy="599.5" fill="#7fdaf3" r="131.5"/><path d="m1099.75 614.29 35.12 38.97 96.38-107.52" fill="none" stroke-linecap="round"/></g><path d="m1900 20v1040h-1880v-1040zm20-20h-1920v1080h1920z" fill="#37424a"/></svg>
+              </div>
+            </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="sodone" style="position: relative;">
+            <div id="swiperinfo-0" class="swiperinfo">
+              <h3>Empathize</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore laudantium ducimus quod sit nobis obcaecati tenetur accusantium! Rerum quod inventore amet, enim maxime quis veritatis ipsa adipisci eaque, voluptates quae.</p>
+            </div>
+            <div id="swiperinfo-1" class="swiperinfo">
+              <h3>Define</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores laborum perspiciatis nesciunt recusandae officia cupiditate distinctio non ipsum. Optio neque, necessitatibus explicabo. Harum quidem, ab velit sit voluptate, earum?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Corrupti vel mollitia accusantium nostrum neque ad dignissimos possimus aspernatur laudantium distinctio blanditiis deserunt, quos commodi omnis culpa ullam quam quasi porro.</p>
+            </div> 
+            <div id="swiperinfo-2" class="swiperinfo">
+              <h3>Ideate</h3>
+              <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iure quisquam nobis magnam esse suscipit inventore corporis, laborum accusamus nisi et nesciunt dicta id minus fugit recusandae. Id, pariatur, laborum.</p>
+              <p>In maiores cupiditate accusantium voluptatem nam! Quas, amet ea eaque facilis cum, suscipit cupiditate officiis blanditiis ratione sapiente tenetur necessitatibus, dolore et deserunt modi. Quas adipisci perspiciatis minus modi culpa!</p>
+            </div>  
+            <div id="swiperinfo-3" class="swiperinfo">
+              <h3>Prototype</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Voluptates optio repudiandae aliquid velit dolorem maiores est rem facere voluptatum ut similique facilis, quaerat possimus sed blanditiis, placeat eveniet dolor quo.</p>
+              <p>Eveniet mollitia nobis doloribus aspernatur, id sunt aliquid velit eaque, deserunt fugiat ex, debitis ipsa quisquam? Perspiciatis saepe odit magni qui recusandae, architecto, tenetur repudiandae tempore consequuntur dolorem dolor, illo.</p>
+            </div>    
+            <div id="swiperinfo-4" class="swiperinfo">
+              <h3>Test</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, labore id harum assumenda, accusamus hic autem est corrupti, maxime aspernatur impedit! Eaque est ipsum accusamus fuga, iusto velit corrupti, pariatur!</p>
+              <p>Officia aliquam saepe quia iusto, deserunt libero ad dolores excepturi? Qui rem aliquam, alias repellat dolore molestias, illum necessitatibus iusto minus quae. Accusamus delectus laborum, asperiores unde doloremque vel quibusdam!</p>
+            </div>             
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="container-fluid py-5 bg-dark">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-white text-center">
+          <p class="h1">&#8220;Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Aut, eligendi fuga hic quod rerum reiciendis consectetur, assumenda quia ipsum enim perferendis iure? Eos fugiat molestias quam ducimus ullam, doloremque ea.&#8221;</p>
+          <p class="mb-0"><em>&mdash; Scott Harwood, CEO, Amplify Corp</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center sm-line">These guys have trusted me, why dont you?</h1>
+          <p>Logo pizza goes here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12 text-end">
+        <a href="#" id="top" class="btn btn-outline-dark">&uarr; Back to top</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-12">
+      <h1>Fuck me sideways / 6</h1>
+      <h1>hello world!</h1>
+      <p>I rock! </p>
+      <p>why no live reload?</p>
+      <h1>Liquid</h1>
+      <p>Object <a href="https://jekyllrb.com/docs/variables/">Variables</a>, <a href="https://jekyllrb.com/docs/liquid/tags/">Tags</a>, and <a href="https://jekyllrb.com/docs/liquid/filters/">Filters</a></p>
+    </div>
+  </div>  
+
+
+
+
+      
+    </main>
+    
+    <footer>
+  <div id="footer-top" class="container-fluid py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3 order-4 order-lg-1">
+              <svg class="svg-white svg-logo bi me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.17 21.32"><path d="M38.62 6.73c-1.7-1.66-3.74-2.48-6.11-2.48h-5.06v-.66c0-.98-.35-1.82-1.06-2.53S24.85 0 23.86 0v4.25h-1.5c-2.36 0-4.39.83-6.09 2.48-.28.28-.54.56-.77.85-.23-.29-.48-.56-.75-.83-1.71-1.67-3.74-2.51-6.1-2.51s-4.39.84-6.09 2.51C.86 8.42.01 10.44.01 12.8v8.51h8.64c1.91 0 3.6-.54 5.08-1.61.36-.26.7-.55 1.03-.87 1.7-1.66 2.55-3.67 2.55-6.03v-.04c0-1.41.49-2.62 1.47-3.62s2.17-1.51 3.58-1.51h1.5v5.12c0 2.36.85 4.38 2.55 6.05 1.7 1.67 3.73 2.51 6.09 2.51s4.4-.83 6.1-2.51 2.56-3.69 2.56-6.05-.85-4.37-2.55-6.03Zm-26.41 9.69c-.98 1-2.17 1.51-3.57 1.51H3.61v-5.12c0-1.41.49-2.62 1.46-3.64s2.16-1.53 3.57-1.53 2.6.51 3.57 1.53c.98 1.02 1.46 2.23 1.46 3.64 0 1.41-.49 2.61-1.46 3.61Zm23.86-.02c-.98 1.02-2.17 1.53-3.58 1.53s-2.6-.51-3.58-1.53-1.47-2.23-1.47-3.64V7.64h5.05c1.41 0 2.6.5 3.58 1.5s1.47 2.21 1.47 3.62c0 1.41-.49 2.62-1.47 3.64Z"/></svg>
+              <p class="mt-3">
+                    A108 Adam Street <br>
+                    NY 535022, USA<br><br>
+                    <strong>Phone:</strong> <a href="tel:+1 5589 55488 55">+1 5589 55488 55</a><br>
+                    <strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a><br>
+              </p>
+              <p>
+                <a href="https://youtube.com" aria-label="Watch us on YouTube"><svg class="svg-white svg-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
+                <a href="https://linkedin.com" aria-label="More info on LinkedIn"><svg class="svg-white svg-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+
+                <a href="https://twitter.com" aria-label="Follow us on Twitter"><svg class="svg-white svg-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+
+                <a href="https://facebook.com" aria-label="Read more on Facebook"><svg class="svg-white svg-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+
+                <a href="https://instagram.com" aria-label="Check us our on Instagram"><svg class="svg-white svg-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+              </p>
+        </div>
+        <div class="col-6 col-lg-3 order-1 order-lg-2 mb-5">
+          <h1 class="h5">Features</h1>
+          <ul class="footer-nav list-unstyled text-small">
+            <li>> <a href="#">Cool stuff</a></li>
+            <li>> <a href="#">Random feature</a></li>
+            <li>> <a href="#">Team feature</a></li>
+            <li>> <a href="#">Stuff for developers</a></li>
+            <li>> <a href="#">Another one</a></li>
+            <li>> <a href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 order-2 order-lg-3 mb-5">
+          <h1 class="h5">Resources</h1>
+          <ul class="footer-nav list-unstyled text-small">
+            <li>> <a href="#">Resource name</a></li>
+            <li>> <a href="#">Resource</a></li>
+            <li>> <a href="#">Another resource</a></li>
+            <li>> <a href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 order-3 order-lg-4 mb-5">
+          <form action="">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Example label</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer-bottom" class="container-fluid py-3">
+    <p class="text-center small mb-0">&copy; 2008-<span id="current-year"></span> DRB Productions Ltd. All Rights Reserved. Copy footer from old hugo site</p>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>
   </body>
 </html>

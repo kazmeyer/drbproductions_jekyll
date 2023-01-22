@@ -23,6 +23,11 @@
 nbproject
 Thumbs.db
 /.vscode/
+*.codekit3
 
 # Folders to ignore
 /vendor/
+/node_modules/
+/source/
+/package-lock.json
+/package.json

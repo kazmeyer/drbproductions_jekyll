@@ -1,0 +1,102 @@
+.hero-image {
+  background-color: $dark; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  position: relative;
+}
+.webp .hero-image {
+  background-image: url("/images/hero-test-1.webp"); 
+}
+.no-webp .hero-image {
+  background-image: url("/images/hero-test-1.png"); 
+}
+.hero-image:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: $dark;
+  mix-blend-mode: color;
+}
+
+
+
+.home-fixed-1 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;background-size: cover;
+  position: relative;
+
+}
+.webp .home-fixed-1 {
+  background-image: url('/images/ws_Simple_Light_Textured_Backround_1920x1080.webp');        
+}
+.no-webp .home-fixed-1 {
+  background-image: url('/images/ws_Simple_Light_Textured_Backround_1920x1080.jpg');        
+}
+
+.home-fixed-1:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: $dark;
+   mix-blend-mode: color;
+}
+
+.home-pull-bg {
+  background-color: $dark; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+.webp .home-pull-bg {
+  background-image: url('/images/figure-picture-test.webp');        
+}
+.no-webp .home-pull-bg {
+  background-image: url('/images/figure-picture-test.png');        
+}
+
+/* swiper */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: $white;
+}
+
+[data-swiper-slide-index="0"] {
+  background-color: blanchedalmond;
+}
+[data-swiper-slide-index="1"] {
+  background-color: indianred;
+}
+[data-swiper-slide-index="2"] {
+  background-color: $light;
+}
+[data-swiper-slide-index="3"] {
+  background-color: blanchedalmond;
+}
+[data-swiper-slide-index="4"] {
+  background-color: indianred;
+}
+
+.swiperinfo {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.doanim {
+  opacity: 1;
+}
