@@ -1,6 +1,7 @@
 title: What the fuck is this the site title?
 description: This is my site's description.
 locale: en_CA
+baseurl: "/drbproductions_jekyll"
 collections:
   authors:
     output: true
